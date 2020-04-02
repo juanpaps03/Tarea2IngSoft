@@ -54,4 +54,11 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        if (!super.equals(object)) return false;
+        Usuario usuario = (Usuario) object;
+        return getCedula().equals(usuario.getCedula());
+    }
 }
