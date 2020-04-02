@@ -18,4 +18,8 @@ public class funcionesUsuario {
         }
         return discount;
     }
+
+    public void pagarSueldo(Usuario usuario, int sueldo){
+        usuario.saldo = usuario.saldo + sueldo;
+    }
 }
